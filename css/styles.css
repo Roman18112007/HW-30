@@ -1,0 +1,80 @@
+body {
+    font-family: Roboto;
+    animation-name: bg-colors;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.container {
+    width: 1400px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    animation: cube-animation 5s linear infinite;
+}
+
+@keyframes cube-animation {
+    0% {
+        background-color: purple;
+        transform: translate(-150%, -150%);
+    }
+
+    25% {
+        background-color: orange;
+        transform: translate(-150%, -350%);
+    }
+
+    50% {
+        background-color: blue;
+        transform: translate(-350%, -350%);
+    }
+
+    75% {
+        background-color: red;
+        transform: translate(-350%, -150%);
+    }
+
+    100% {
+        background-color: green;
+        transform: translate(-150%, -150%);
+    }
+}
