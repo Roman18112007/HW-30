@@ -45,9 +45,9 @@ img {
     width: 100px;
     height: 100px;
     background-color: green;
-    transform: translate(-50%, -50%);
+    transform: translate(-70%, 70%);
     position: absolute;
-    top: 50%;
+    top: 70%;
     left: 50%;
     animation: cube-animation 5s linear infinite;
 }
